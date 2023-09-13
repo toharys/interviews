@@ -4,7 +4,7 @@
 
 std::vector<int> greedy(int N, std::vector<int> v){
   std::vector<int> res();
-  std::sort(v);
+  std::sort(v.begin(), v.end());
   int sum = 0, i=0;
   while(i<v.size() && sum<=N){
     sum+=v[i];
